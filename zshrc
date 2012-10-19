@@ -12,7 +12,7 @@ source $HOME/.zsh/src/bundler.zsh
 source $HOME/.zsh/src/auto-fu.zsh
 source $HOME/.zsh/src/keybinds.zsh
 source $HOME/.zsh/src/plugins.zsh
-source $HOME/.zsh/lib/prompt.zsh
+source $HOME/.zsh/src/prompt.zsh
 
 if [[ -s "$HOME/.rvm/scripts/rvm" ]]
 then
