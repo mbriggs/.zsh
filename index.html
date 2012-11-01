@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>.zsh by mbriggs</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1 class="header">.zsh</h1>
+        <p class="header">my zsh config,  mostly stolen from others</p>
+
+        <ul>
+          <li class="download"><a class="buttons" href="https://github.com/mbriggs/.zsh/zipball/master">Download ZIP</a></li>
+          <li class="download"><a class="buttons" href="https://github.com/mbriggs/.zsh/tarball/master">Download TAR</a></li>
+          <li><a class="buttons github" href="https://github.com/mbriggs/.zsh">View On GitHub</a></li>
+        </ul>
+
+        <p class="header">This project is maintained by <a class="header name" href="https://github.com/mbriggs">mbriggs</a></p>
+
+
+      </header>
+      <section>
+        <h1>ZSH Config</h1>
+
+<p>This is my zsh config, which was mostly created by reading others on
+the web, and stealing ideas.</p>
+
+<p>If you live in your prompt all day for your job, then using a
+"framework" like oh-my-zsh is only going to hurt you in the long run
+(like janus for vim, or emacs-starter-kit for emacs). Instead of
+looking at this like a "framework", treat it as either inspiration for
+something totally yours, or a starting point that you extend and
+modify to suit your personal preferences</p>
+
+<h2>Gotchas</h2>
+
+<p>I'll try to address this at some point, but I have a seprate repo for my dotfiles, and there are some parts of this that will source those files. So before an install, have dot files that look something like <a href="https://github.com/mbriggs/dotfiles/blob/master/scmbrc">https://github.com/mbriggs/dotfiles/blob/master/scmbrc</a> <a href="https://github.com/mbriggs/dotfiles/blob/master/git.scmbrc">https://github.com/mbriggs/dotfiles/blob/master/git.scmbrc</a> and <a href="https://github.com/mbriggs/dotfiles/blob/master/aliases">https://github.com/mbriggs/dotfiles/blob/master/aliases</a> (to be clear, that means something like git.scmbrc should be in your home dir with a dot in front of it, <code>.git.scmbrc</code>)</p>
+
+<h2>Installation</h2>
+
+<pre><code>cd ~
+git clone https://github.com/mbriggs/.zsh
+cd .zsh
+make install
+</code></pre>
+
+<h2>Highlights</h2>
+
+<p>This has a lot of common configurations and customizations. What is
+not so common is that it is also split apart into very easy to manage
+files, and has a one command install <code>make install</code>.</p>
+
+<p>Beyond that, here are some highlights that aren't quite as common.</p>
+
+<ul>
+<li><p><a href="https://github.com/hchbaw/auto-fu.zsh">auto-fu</a> is an amazing
+plugin that provides fast completion as you type. The only downside
+is that it is a pain to set up, but once it is, this plugin probably
+will have the greatest impact on your day to day usage.</p></li>
+<li><p><a href="https://github.com/ndbroadbent/scm_breeze">scm breeze</a> is another
+amazing plugin that makes git a lot less painful to use from the
+command line, especially if you are on a project where people love
+to use super long branch names with silly word separaters (like
+<code>_</code>), AND there are several hundred branches in the repo.</p></li>
+<li><p><a href="https://github.com/sindresorhus/pure">Pure</a> prompt (by
+cindersaurus) is beautiful, minimal, and very fast (uses the fastest
+method of git dirty checking possible)</p></li>
+<li><p>Ruby has a packaging system called Bundler, which requires you to
+prepend certain commands with <code>bundle exec</code>. This gets old very
+fast, and there are various solutions available out there. This
+solution has a whitelist of commands that will be automatically
+<code>bundle exec</code>d, but only if you are in a project that uses bundler</p></li>
+<li><p><code>B</code> refers to the current branch in git. So if you are on a branch
+called <code>this-is-some-really-really-long-branch-name</code>, then <code>git push
+origin B</code> is extremely helpful.</p></li>
+</ul>
+      </section>
+      <footer>
+        <p><small>Hosted on <a href="https://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+		
+  </body>
+</html>
