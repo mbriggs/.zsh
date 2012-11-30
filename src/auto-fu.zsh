@@ -82,4 +82,4 @@ zstyle ':auto-fu:highlight' completion/one fg=blue,dim
 zstyle ':auto-fu:var' postdisplay ''
 zstyle ':auto-fu:var' track-keymap-skip opp
 zstyle ':auto-fu:var' autoable-function/skiplbuffers \
-  'rake *' 'gem *' 'git log *' 'npm*' 'Commit Message:*' 'g*' 'gs*' 'ga*' 'gap*' 'gsf*' 'ge*' 'gco*' 'gcob*' 'gc*' 'grs*' 'grs-*' 'grsh*' 'grm*' 'gbl*' 'gd*' 'gdc*' 'gcl*' 'gf*' 'gfa*' 'gfr*' 'gpl*' 'gps*' 'gpls*' 'gst*' 'gss*' 'gce*' 'gcef*' 'gaa*' 'gca*' 'gcm*' 'gcmh*' 'gch*' 'gr*' 'gb*' 'gba*' 'gbm*' 'gbd*' 'grb*' 'grbc*' 'grba*' 'gm*' 'gcp*' 'gl*' 'glstat*' 'glg*' 'gsh*' 'gsm*'
+  'rake *' 'gem *' 'git log *' 'npm *' 'sudo npm *' 'bundle *' 'Commit Message:*' 'g*' 'gs*' 'ga*' 'gap*' 'gsf*' 'ge*' 'gco*' 'gcob*' 'gc*' 'grs*' 'grs-*' 'grsh*' 'grm*' 'gbl*' 'gd*' 'gdc*' 'gcl*' 'gf*' 'gfa*' 'gfr*' 'gpl*' 'gps*' 'gpls*' 'gst*' 'gss*' 'gce*' 'gcef*' 'gaa*' 'gca*' 'gcm*' 'gcmh*' 'gch*' 'gr*' 'gb*' 'gba*' 'gbm*' 'gbd*' 'grb*' 'grbc*' 'grba*' 'gm*' 'gcp*' 'gl*' 'glstat*' 'glg*' 'gsh*' 'gsm*'

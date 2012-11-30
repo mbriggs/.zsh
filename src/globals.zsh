@@ -1,22 +1,18 @@
 
-pathdirs=("$HOME/local/bin"
-          "/usr/bin"
-          "/bin"
-          "/usr/sbin"
-          "/sbin"
-          "/usr/local/bin"
-          "/usr/X11/bin"
-          "/usr/local/share/npm/bin"
-          "$HOME/.rvm/bin"
-          "$HOME/scripts")
+path=("$HOME/local/bin"
+      "/usr/local/bin"
+      "/usr/local/sbin"
+      "/usr/bin"
+      "/bin"
+      "/usr/sbin"
+      "/sbin"
+      "/usr/X11/bin"
+      "/usr/local/share/npm/bin"
+      "$HOME/.rvm/bin"
+      "$HOME/scripts"
+      $path)
 
-for dir in $pathdirs
-do
-    if [[ -d $dir ]]
-    then
-        path+=$dir
-    fi
-done
+fpath=(~/.zsh/fn ~/.zsh/completions ~/.zsh/lib/zsh-completions/src $fpath)
 
 export CLOJURE_EXT=~/.clojure
 export GIT_EDITOR=vim

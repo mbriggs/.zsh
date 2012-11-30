@@ -31,3 +31,6 @@ _quote-previous-word-in-double() {
 zle -N _quote-previous-word-in-double
 
 source $HOME/.zsh/lib/scm_breeze/scm_breeze.sh
+source $HOME/.zsh/lib/syntax-highlighting/zsh-syntax-highlighting.zsh
+source $HOME/.zsh/lib/history-substring-search/zsh-history-substring-search.zsh
+[[ -f `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh

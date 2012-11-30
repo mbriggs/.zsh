@@ -1,13 +1,17 @@
-# -*- mode: shell-script; -*-
 # Pure
 # by Sindre Sorhus
 # https://github.com/sindresorhus/pure
 # MIT License
 
 
+# Change this to your own username
 DEFAULT_USERNAME='matt'
-CMD_MAX_EXEC_TIME=4
 
+# Threshold (sec) for showing cmd exec time
+CMD_MAX_EXEC_TIME=5
+
+
+# For my own and others sanity
 # git:
 # %b => current branch
 # %a => current action (rebase/merge)
@@ -21,7 +25,7 @@ CMD_MAX_EXEC_TIME=4
 # %(?..) => prompt conditional - %(condition.true.false)
 
 autoload -Uz vcs_info
-zstyle ':vcs_info:*' enable git hg
+zstyle ':vcs_info:*' enable git # You can add hg too if needed: `git hg`
 zstyle ':vcs_info:git*' formats ' %b'
 zstyle ':vcs_info:git*' actionformats ' %b|%a'
 
