@@ -21,10 +21,11 @@ export LESS_TERMCAP_md="$ORANGE"
 export LC_ALL="en_US.UTF-8"
 export LANG="en_US"
 
+export HISTFILE=$HOME/.zsh-history
 # Larger bash history (allow 32³ entries; default is 500)
 export HISTSIZE=1000
+export SAVEHIST=1000
 export HISTFILESIZE=2000
-export HISTCONTROL=ignoredups:ignorespace
 # Make some commands not show up in history
 export HISTIGNORE="ls:cd:cd -:pwd:exit:date:* --help"
 
