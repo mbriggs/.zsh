@@ -4,10 +4,8 @@ BUNDLED_COMMANDS=(cap
                   foreman
                   guard
                   haml
-                  heroku
                   html2haml
                   jekyll
-                  #pry
                   rackup
                   rails
                   rake
