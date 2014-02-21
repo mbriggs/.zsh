@@ -1,5 +1,7 @@
 
-path=("$HOME/local/bin"
+path=("$HOME/.rbenv/bin"
+      "$HOME/local/bin"
+      "/Users/matt/.cask/bin"
       "/usr/local/bin"
       "/usr/local/sbin"
       "/usr/bin"
@@ -7,8 +9,11 @@ path=("$HOME/local/bin"
       "/usr/sbin"
       "/sbin"
       "/usr/X11/bin"
+      "./node_modules/.bin"
       "/usr/local/share/npm/bin"
+      "/Applications/Postgres.app/Contents/MacOS/bin"
       "$HOME/.rvm/bin"
+      "$HOME/.cabal/bin"
       "$HOME/scripts"
       $path)
 
@@ -47,3 +52,5 @@ elif [ -x "`which less`" ]; then
 else
     export PAGER="/bin/more"
 fi
+
+export RUBY_GC_MALLOC_LIMIT=80000000
