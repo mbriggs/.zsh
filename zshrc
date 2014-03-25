@@ -9,7 +9,7 @@ source $HOME/.zsh/src/options.zsh
 source $HOME/.zsh/src/os.zsh
 source $HOME/.zsh/src/completion.zsh
 source $HOME/.zsh/src/bundler.zsh
-source $HOME/.zsh/lib/functions.zsh
+source $HOME/.zsh/functions.zsh
 #source $HOME/.zsh/src/auto-fu.zsh
 source $HOME/.zsh/src/keybinds.zsh
 source $HOME/.zsh/src/plugins.zsh
