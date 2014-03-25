@@ -26,6 +26,7 @@ export EDITOR=vim
 export LESS_TERMCAP_md="$ORANGE"
 export LC_ALL="en_US.UTF-8"
 export LANG="en_US"
+export HOMEBREW_GITHUB_API_TOKEN="f2655b95643da6f607b1222d6069d17ec77b1d25"
 
 export HISTFILE=$HOME/.zsh-history
 # Larger bash history (allow 32³ entries; default is 500)
