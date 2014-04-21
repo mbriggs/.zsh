@@ -1,5 +1,6 @@
 
-path=("$HOME/.rbenv/bin"
+path=("./bin"
+      "$HOME/.rbenv/bin"
       "$HOME/local/bin"
       "/Users/matt/.cask/bin"
       "/usr/local/bin"

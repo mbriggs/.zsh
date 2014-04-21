@@ -19,7 +19,6 @@ setopt share_history # share history
 
 # misc
 setopt notify # report bg jobs immediately
-setopt vi # vi mode
 setopt no_beep
 setopt interactive_comments
 setopt combining_chars
