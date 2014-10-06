@@ -1,6 +1,7 @@
 
 path=("./bin"
       "$HOME/.rbenv/bin"
+      "$HOME/.keybase/bin"
       "$HOME/local/bin"
       "/Users/matt/.cask/bin"
       "/usr/local/bin"
@@ -11,6 +12,7 @@ path=("./bin"
       "/sbin"
       "/usr/X11/bin"
       "$HOME/dart-sdk/bin"
+      "$HOME/.cask/bin"
       "./node_modules/.bin"
       "/usr/local/share/npm/bin"
       "/Applications/Postgres.app/Contents/Versions/9.3/bin"
@@ -22,12 +24,13 @@ path=("./bin"
 fpath=(~/.zsh/fn ~/.zsh/completions ~/.zsh/lib/zsh-completions/src $fpath)
 
 export CLOJURE_EXT=~/.clojure
-export GIT_EDITOR=vim
-export EDITOR=vim
+export GIT_EDITOR="emacsclient -n"
+export EDITOR="emacsclient -n"
 export LESS_TERMCAP_md="$ORANGE"
 export LC_ALL="en_US.UTF-8"
 export LANG="en_US"
 export HOMEBREW_GITHUB_API_TOKEN="f2655b95643da6f607b1222d6069d17ec77b1d25"
+export JAVA_TOOLS_JAR="`/usr/libexec/java_home -v 1.7`/lib/tools.jar"
 
 export HISTFILE=$HOME/.zsh-history
 # Larger bash history (allow 32³ entries; default is 500)

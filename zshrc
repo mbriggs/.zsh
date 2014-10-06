@@ -15,11 +15,6 @@ source $HOME/.zsh/src/keybinds.zsh
 source $HOME/.zsh/src/plugins.zsh
 source $HOME/.zsh/src/prompt.zsh
 
-if [[ -s "$HOME/.rvm/scripts/rvm" ]]
-then
-    source "$HOME/.rvm/scripts/rvm"
-fi
-
 eval "$(rbenv init -)"
 
 [ -s "/Users/matt/.scm_breeze/scm_breeze.sh" ] && source "/Users/matt/.scm_breeze/scm_breeze.sh"
