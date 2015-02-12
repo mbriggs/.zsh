@@ -16,7 +16,6 @@ path=("./bin"
       "./node_modules/.bin"
       "/usr/local/share/npm/bin"
       "/Applications/Postgres.app/Contents/Versions/9.3/bin"
-      "$HOME/.rvm/bin"
       "$HOME/.cabal/bin"
       "$HOME/scripts"
       $path)

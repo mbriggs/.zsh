@@ -30,11 +30,16 @@ _quote-previous-word-in-double() {
 }
 zle -N _quote-previous-word-in-double
 
-source $HOME/.zsh/lib/scm_breeze/scm_breeze.sh
 source $HOME/.zsh/lib/syntax-highlighting/zsh-syntax-highlighting.zsh
 source $HOME/.zsh/lib/history-substring-search/zsh-history-substring-search.zsh
 
 [[ -f /usr/local/etc/autojump.sh ]] && . /usr/local/etc/autojump.sh
+[ -d "$HOME/.rbenv" ] && eval "$(rbenv init -)"
 
+source $HOME/.zsh/lib/scm_breeze/scm_breeze.sh
 [ -s "$HOME/.scm_breeze/scm_breeze.sh" ] && source "$HOME/.scm_breeze/scm_breeze.sh"
-[ -f "$HOME/.rbenv" ] && eval "$(rbenv init -)"
+
+if [ -d "$HOME/.nvm" ]; then
+  export NVM_DIR="$HOME/.nvm"
+  [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+fi
