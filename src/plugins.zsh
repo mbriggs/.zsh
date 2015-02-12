@@ -33,4 +33,8 @@ zle -N _quote-previous-word-in-double
 source $HOME/.zsh/lib/scm_breeze/scm_breeze.sh
 source $HOME/.zsh/lib/syntax-highlighting/zsh-syntax-highlighting.zsh
 source $HOME/.zsh/lib/history-substring-search/zsh-history-substring-search.zsh
-[[ -f `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
+
+[[ -f /usr/local/etc/autojump.sh ]] && . /usr/local/etc/autojump.sh
+
+[ -s "$HOME/.scm_breeze/scm_breeze.sh" ] && source "$HOME/.scm_breeze/scm_breeze.sh"
+[ -f "$HOME/.rbenv" ] && eval "$(rbenv init -)"
