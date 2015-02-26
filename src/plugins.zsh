@@ -33,6 +33,8 @@ zle -N _quote-previous-word-in-double
 source $HOME/.zsh/lib/syntax-highlighting/zsh-syntax-highlighting.zsh
 source $HOME/.zsh/lib/history-substring-search/zsh-history-substring-search.zsh
 
+[[ -f  "$HOME/.vim/bundle/gruvbox/gruvbox_256palette_osx.sh" ]] && source "$HOME/.vim/bundle/gruvbox/gruvbox_256palette_osx.sh"
+
 [[ -f /usr/local/etc/autojump.sh ]] && . /usr/local/etc/autojump.sh
 [ -d "$HOME/.rbenv" ] && eval "$(rbenv init -)"
 
@@ -43,3 +45,9 @@ if [ -d "$HOME/.nvm" ]; then
   export NVM_DIR="$HOME/.nvm"
   [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
 fi
+
+if [ -d "$HOME/.teamocil" ]; then
+  compctl -g '~/.teamocil/*(:t:r)' teamocil
+  compctl -g '~/.teamocil/*(:t:r)' cil
+fi
+
