@@ -19,3 +19,5 @@ source $HOME/.zsh/src/prompt.zsh
 if [ -f $HOME/.ssh/id_rsa ]; then
   ssh-add $HOME/.ssh/id_rsa &> /dev/null
 fi
+
+[ -s "$HOME/.scm_breeze/scm_breeze.sh" ] && source "$HOME/.scm_breeze/scm_breeze.sh"
