@@ -16,6 +16,8 @@ source $HOME/.zsh/src/keybinds.zsh
 source $HOME/.zsh/src/plugins.zsh
 source $HOME/.zsh/src/prompt.zsh
 
+export PATH="./bin:$PATH"
+
 if [ -f $HOME/.ssh/id_rsa ]; then
   ssh-add $HOME/.ssh/id_rsa &> /dev/null
 fi

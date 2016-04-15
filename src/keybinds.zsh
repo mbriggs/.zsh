@@ -23,6 +23,7 @@ bindkey '^[OF' end-of-line                          # [End] - Go to end of line
 # emacs style
 bindkey '^a' beginning-of-line
 bindkey '^e' end-of-line
+bindkey -e
 
 bindkey ' ' magic-space                             # [Space] - do history expansion
 
