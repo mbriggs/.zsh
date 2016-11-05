@@ -21,3 +21,6 @@ export PATH="./bin:$PATH"
 if [ -f $HOME/.ssh/id_rsa ]; then
   ssh-add $HOME/.ssh/id_rsa &> /dev/null
 fi
+. $HOME/.asdf/asdf.sh
+. $HOME/.asdf/completions/asdf.bash
+inspiration --header
