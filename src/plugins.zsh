@@ -32,6 +32,7 @@ zle -N _quote-previous-word-in-double
 
 source $HOME/.zsh/lib/syntax-highlighting/zsh-syntax-highlighting.zsh
 source $HOME/.zsh/lib/history-substring-search/zsh-history-substring-search.zsh
+source $HOME/.zsh/lib/autoenv/autoenv.zsh
 
 [[ -f  "$HOME/.vim/bundle/gruvbox/gruvbox_256palette_osx.sh" ]] && source "$HOME/.vim/bundle/gruvbox/gruvbox_256palette_osx.sh"
 

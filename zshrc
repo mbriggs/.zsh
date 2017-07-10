@@ -16,11 +16,16 @@ source $HOME/.zsh/src/keybinds.zsh
 source $HOME/.zsh/src/plugins.zsh
 source $HOME/.zsh/src/prompt.zsh
 
-export PATH="./bin:$PATH"
+export PATH="./bin:$PATH:$HOME/go/bin"
+export GOPATH="$HOME/go"
 
 if [ -f $HOME/.ssh/id_rsa ]; then
   ssh-add $HOME/.ssh/id_rsa &> /dev/null
 fi
-. $HOME/.asdf/asdf.sh
-. $HOME/.asdf/completions/asdf.bash
 inspiration --header
+
+export PATH="$HOME/.yarn/bin:$PATH"
+
+if [ -f $HOME/.cargo/env ]; then
+  . $HOME/.cargo/env
+fi
