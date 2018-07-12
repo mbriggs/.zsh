@@ -24,5 +24,3 @@ setopt interactive_comments
 setopt combining_chars
 setopt prompt_subst
 
-## Setup proper term information for emacs ansi-term mode
-[[ $TERM == eterm-color ]] && export TERM=xterm

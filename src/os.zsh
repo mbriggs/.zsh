@@ -6,5 +6,4 @@ then
 else
     . /usr/share/autojump/autojump.sh
     alias ls="ls --color"
-    export TERM=xterm-256color
 fi

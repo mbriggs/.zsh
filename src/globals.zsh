@@ -22,9 +22,11 @@ path=("./bin"
 
 fpath=(~/.zsh/fn ~/.zsh/completions ~/.zsh/lib/zsh-completions/src $fpath)
 
+export FZF_DEFAULT_COMMAND='fd --type f'
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 export CLOJURE_EXT=~/.clojure
-export GIT_EDITOR="vim"
-export EDITOR="vim"
+export GIT_EDITOR="nvim"
+export EDITOR="nvim"
 export LESS_TERMCAP_md="$ORANGE"
 export LC_ALL="en_US.UTF-8"
 export LANG="en_US"
@@ -38,14 +40,6 @@ export SAVEHIST=1000
 export HISTFILESIZE=2000
 # Make some commands not show up in history
 export HISTIGNORE="ls:cd:cd -:pwd:exit:date:* --help"
-
-
-if [ -x "`which vim`" ]; then
-    export EDITOR="`which vim`"
-    alias vi="`which vim`"
-else
-    export EDITOR="`which vi`"
-fi
 
 if [ -x "`which lv`" ]; then
     export PAGER="`which lv`"
